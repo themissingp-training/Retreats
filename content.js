@@ -54,6 +54,7 @@ window.CONTENT = {
     { name: "Save the Children",   file: "assets/logos/savethechildren.png" },
     { name: "HUBCO",               file: "assets/logos/hubco.png" },
     { name: "Telenor",             file: "assets/logos/telenor.png" },
+    { name: "Lucky Cement",        file: "assets/logos/lucky-cement.png" },
     { name: "Hayat Kimya",         file: "assets/logos/hayat-kimya.png" },
     { name: "The Asia Foundation", file: "assets/logos/asia-foundation.png" },
     { name: "Humanity & Inclusion", file: "assets/logos/handicap-international.png", tall: true },
