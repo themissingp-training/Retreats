@@ -149,7 +149,7 @@ window.CONTENT = {
     { file: "assets/img/ss-worldbank.jpg",   caption: "Feedback · The World Bank" }
   ],
   videoTestimonials: [
-    { file: "assets/video/testimonial-1.mp4", poster: "assets/video/testimonial-1-poster.jpg", caption: "Participant feedback, on the day", shape: "tall" }
+    { file: "assets/video/testimonial-1.mp4", poster: "assets/video/testimonial-1-poster.jpg", caption: "Nadir Khusro Gillani · Chief Commercial Officer, Lucky Cement", shape: "tall" }
   ],
 
   /* ---------- 6. THE CHALLENGES ---------- */
