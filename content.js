@@ -215,7 +215,7 @@ window.CONTENT = {
   /* ---------- 7. FORM ---------- */
   form: {
     title:    "Get a retreat plan for your team",
-    text:     "Answer a few quick questions (about 2 minutes), then pick a time for a 20-minute call.",
+    text:     "Answer a few quick questions (about 2 minutes), then pick a time for a short call with our team.",
     promises: ["A draft agenda matched to your team's goal", "Format options for 1, 2 or 3 days", "Venue ideas for your city or a hill station", "A clear quote, with no obligation"],
     teamSize: ["Under 25", "25–50", "50–100", "100+"],
     needs:    ["Break silos between departments", "Re-energize the team", "Align on goals and targets", "Onboard new members", "Celebrate or reward", "Something else"],
@@ -229,6 +229,6 @@ window.CONTENT = {
 
   thanks: {
     title: "Thank you",
-    text:  "Pick a time below for a 20-minute call. We'll come prepared with ideas for your team."
+    text:  "Pick a time below for a quick call. We'll come prepared with ideas for your team."
   }
 };

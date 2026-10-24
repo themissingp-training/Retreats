@@ -198,7 +198,13 @@
     const f = $("#leadform"); if (f) f.hidden = true;
     $("#t-name").textContent = (name || "there").trim().split(" ")[0];
     $("#thanks").hidden = false;
-    if (S.calendlyUrl) $("#cal").innerHTML = `<iframe title="Book a call" src="${esc(S.calendlyUrl)}?hide_gdpr_banner=1&primary_color=1f80e6"></iframe><p class="cal-alt">Calendar not showing? <a href="${esc(S.calendlyUrl)}" target="_blank" rel="noopener">Open it in a new tab →</a></p>`;
+    if (S.calendlyUrl) {
+      $("#cal").innerHTML = `<div id="cal-widget" style="min-width:280px;height:700px"></div><p class="cal-alt">Calendar not showing? <a href="${esc(S.calendlyUrl)}" target="_blank" rel="noopener">Open it in a new tab →</a></p>`;
+      const prefill = { name: ($("#f-name") || {}).value || "", email: ($("#f-email") || {}).value || "" };
+      const start = () => window.Calendly && window.Calendly.initInlineWidget({ url: S.calendlyUrl + "?hide_gdpr_banner=1&primary_color=1f80e6", parentElement: document.getElementById("cal-widget"), prefill });
+      if (window.Calendly) start();
+      else { const sc = document.createElement("script"); sc.src = "https://assets.calendly.com/assets/external/widget.js"; sc.async = true; sc.onload = start; document.head.appendChild(sc); }
+    }
     $("#plan").scrollIntoView({ behavior: "smooth" });
   }
   if (/[?&]thanks/.test(location.search)) thanks("");
