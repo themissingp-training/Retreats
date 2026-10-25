@@ -112,11 +112,13 @@ window.CONTENT = {
       text: "Indoor team challenges for the Pakistan Institute for Parliamentary Services.",
       photos: ["assets/img/pips-hall.jpg"] }
   ],
+  morePortfolioTitle: "More retreats we've run",
+  morePortfolioText:  "Team size, format and venue at a glance",
   morePortfolio: [
-    { name: "GIZ Migration Team",    big: "20",   note: "3-day retreat · Avari Lahore · Apr 14–16, 2025" },
-    { name: "MDM",                   big: "100+", note: "Ramada, Murree" },
-    { name: "IRP",                   big: "100+", note: "Rejuvenation retreat in Murree" },
-    { name: "Malteser Pakistan",     big: "60+",  note: "Fun break in the mountains of Murree" }
+    { name: "GIZ Migration Team", big: "20",   unit: "participants", note: "3-day retreat · Avari Lahore · Apr 2025" },
+    { name: "MDM",                big: "100+", unit: "participants", note: "Retreat at Ramada, Murree" },
+    { name: "IRC",                big: "100+", unit: "participants", note: "Rejuvenation retreat in Murree" },
+    { name: "Malteser Pakistan",  big: "60+",  unit: "participants", note: "Fun break in the mountains of Murree" }
   ],
 
   /* Retreat films that play right on the page */

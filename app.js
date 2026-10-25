@@ -62,7 +62,7 @@
           ${p.big ? `<span class="badge">${esc(p.big)}<small>${esc(p.unit)}</small></span>` : ""}</div>
         <div class="body"><h3>${esc(p.name)}</h3><div class="tags">${p.tags.map(t => `<span>${esc(t)}</span>`).join("")}</div><p>${esc(p.text)}</p></div>
       </article>`).join("")}</div>
-    <div class="more-port">${C.morePortfolio.map((m, i) => `<div class="mini c${i % 3}"><strong>${esc(m.big)}</strong><div><b>${esc(m.name)}</b><span>${esc(m.note)}</span></div></div>`).join("")}</div>
+    <div class="more-head"><p class="rv-title">${esc(C.morePortfolioTitle || "More retreats we've run")}</p>${C.morePortfolioText ? `<p class="films-text">${esc(C.morePortfolioText)}</p>` : ""}</div><div class="more-port">${C.morePortfolio.map((m, i) => `<div class="mini c${i % 3}"><div class="mini-n"><strong>${esc(m.big)}</strong>${m.unit ? `<small>${esc(m.unit)}</small>` : ""}</div><div><b>${esc(m.name)}</b><span>${esc(m.note)}</span></div></div>`).join("")}</div>
     ${(C.films || []).length ? `<div class="films"><div class="films-head"><p class="rv-title">${esc(C.filmsTitle || "Retreat films")}</p>${C.filmsText ? `<p class="films-text">${esc(C.filmsText)}</p>` : ""}</div><div class="films-grid">${C.films.map(f => `
       <figure class="film ${esc(f.shape || "wide")}"><video src="${esc(f.file)}" poster="${esc(f.poster)}" controls playsinline preload="none"></video><figcaption>${esc(f.label)}</figcaption></figure>`).join("")}</div></div>` : ""}
     ${(C.retreatVideos || []).length ? `<div class="rv"><p class="rv-title">Watch more retreats</p><div class="rv-list">${C.retreatVideos.map((v, i) => `
