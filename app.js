@@ -191,8 +191,19 @@
       e.preventDefault();
       const m = check(); if (m) { err.textContent = m; return; }
       if (step < 3) { show(step + 1); $("#plan").scrollIntoView({ behavior: "smooth" }); return; }
+      sendLead();
       thanks($("#f-name").value);
     });
+  }
+  function sendLead() {
+    if (!S.leadWebhook) return;
+    const fd = new FormData(form), lead = {};
+    for (const k of new Set(fd.keys())) lead[k] = fd.getAll(k).join(", ");
+    lead.submitted_at = new Date().toISOString();
+    lead.page = location.href;
+    try {
+      fetch(S.leadWebhook, { method: "POST", mode: "no-cors", body: new URLSearchParams(lead), keepalive: true });
+    } catch (_) {}
   }
   function thanks(name) {
     const f = $("#leadform"); if (f) f.hidden = true;

@@ -20,6 +20,7 @@ window.CONTENT = {
   /* ---------- LINKS (fill these in when ready) ---------- */
   settings: {
     jotformId:   "",   // from Jotform: the number at the end of your form link, e.g. "243561234567890"
+    leadWebhook: "",  // Make.com webhook link: every form entry is sent here (Google Sheet + email alert)
     calendlyUrl: "https://calendly.com/themissingp-support/30min",   // e.g. "https://calendly.com/themissingp/retreat-call"
     contactLine: "Prefer to talk first? Message us on WhatsApp or email and we'll call you back."
   },
