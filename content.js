@@ -37,7 +37,7 @@ window.CONTENT = {
   },
 
   proof: [
-    { number: "500+",    label: "IRC participants across 5 retreats" },
+    { number: "2000+",   label: "IRC participants across 5 retreats" },
     { number: "15+",     label: "NGOs, UN agencies and corporates" },
     { number: "50,000+", label: "professionals trained by Usman Gulzari" },
     { number: "14 yrs",  label: "of facilitation, 2,000+ sessions" }
@@ -85,7 +85,7 @@ window.CONTENT = {
       { title: "An agenda built for your goal",   text: "We start with a needs call. Silos, low energy, new joiners or a target push each get a different mix of games and discussions." },
       { title: "Every game ends in a debrief",    text: "Each activity closes with a guided reflection, so people leave with takeaways for work, not just photos." },
       { title: "A seasoned facilitation team",    text: "Led by Usman Gulzari with a co-facilitator. 14 years, 125+ organizations, 2,000+ sessions." },
-      { title: "Proven at 500-person scale",      text: "500+ IRC participants across 5 retreats in Karachi, Nathiagali and Lahore, including 120 at Nathiagali." },
+      { title: "Proven at 2000-person scale",     text: "2000+ IRC participants across 5 retreats in Karachi, Nathiagali and Lahore, including 120 at Nathiagali." },
       { title: "Works for NGOs and corporates",   text: "UN agencies, international NGOs, banks and corporates. Mixed levels, mixed departments." },
       { title: "We run the whole day",            text: "Games, materials, travel and participant certificates are included. You choose the venue; we handle the rest." }
     ]
@@ -93,8 +93,8 @@ window.CONTENT = {
 
   /* ---------- 4. PAST RETREATS ---------- */
   portfolio: [
-    { name: "IRC Pakistan", big: "500+", unit: "participants", tags: ["5 retreats", "120 at Nathiagali", "Karachi · Nathiagali · Lahore"],
-      text: "500+ IRC participants across 5 retreats, including 120 at Nathiagali.",
+    { name: "IRC Pakistan", big: "2000+", unit: "participants", tags: ["5 retreats", "120 at Nathiagali", "Karachi · Nathiagali · Lahore"],
+      text: "2000+ IRC participants across 5 retreats, including 120 at Nathiagali.",
       photos: ["assets/img/irc-group-hotel.jpg", "assets/img/irc-circle-lawn.jpg", "assets/img/irc-bonfire-collage.jpg", "assets/img/hall-session.jpg"] },
     { name: "UN Women", big: "", unit: "", tags: ["Staff retreat"],
       text: "Lots of fun and laughter with important takeaways for every participant.",
